@@ -1,6 +1,8 @@
 #REMOVE PASS AND FIX THIS FUNCTION
 def palindrome(word):
-    if word == word[::-1]:
+    new_word = word.lower()
+    final_word = new_word.replace(" ", '')
+    if final_word == final_word[::-1]:
         return ('True')
     else:
         return ('False')
